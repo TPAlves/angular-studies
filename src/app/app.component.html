@@ -1,3 +1,12 @@
+@defer (on viewport) {
+<comments />
+} @placeholder {
+<p>Conteúdo futuro</p>
+} @loading (minimum 15s) {
+<p>Carregando.....</p>
+}
+
+<hr />
 <app-child (addItemEvent)="addItem($event)" />
 <p>🐢 all the way down {{ items.length }}</p>
 <hr />

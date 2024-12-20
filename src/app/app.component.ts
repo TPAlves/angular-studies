@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserComponent } from './components/user/user.component';
 import { ChildComponent } from './components/child/child.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [UserComponent, ChildComponent],
+  imports: [UserComponent, ChildComponent, CommentsComponent],
 
   // @Input -> componente pai para um componente filho
   // @Output -> componente filho para um componente pai
